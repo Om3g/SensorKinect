@@ -273,6 +273,11 @@ void XnSensorDepthGenerator::UnregisterFromViewPointChange(XnCallbackHandle hCal
 	UnregisterFromProps(hCallback);
 }
 
+XnStatus XnSensorDepthGenerator::GetPixelCoordinatesInViewPoint(xn::ProductionNode& other, XnUInt32 x, XnUInt32 y, XnUInt32& altX, XnUInt32& altY)
+{
+	return (XN_STATUS_OK);
+}
+
 XnBool XnSensorDepthGenerator::CanFrameSyncWith(xn::ProductionNode& OtherNode)
 {
 	return (IsSensorImageNode(OtherNode));
